@@ -253,3 +253,55 @@ Method `hapus` digunakan untuk menghapus data peminjaman.
 * Semua data ditampilkan dengan nomor urut.
 * Pengguna memilih nomor data yang ingin dihapus. Jika nomor tidak valid, muncul pesan error.
 * Jika valid, data akan dihapus dari daftar, lalu ditampilkan pesan **“Data berhasil dihapus!”**.
+
+
+### Alur Program
+
+<img width="476" height="198" alt="image" src="https://github.com/user-attachments/assets/7290afc0-6b2f-4be5-b3f8-64a82640c1d1" />
+
+Saat pertama kali program dijalankan, user langsung memilih menu nomor 2. Belum ada data yang muncul dikarenakan belum ada pengisian peminjaman.
+
+#
+<img width="480" height="199" alt="image" src="https://github.com/user-attachments/assets/03c0e07c-1975-425d-a3c6-ea15bbbe166e" />
+
+Saat user salah menginput angka atau menginput huruf, maka akan muncul pilihan tidak valid, dan akan kembali ke menu utama.
+
+#
+<img width="575" height="441" alt="image" src="https://github.com/user-attachments/assets/137bb771-51e8-4f9d-86f0-d5a66e2e6e06" />
+
+User memilih menu nomor 1, yaitu tambah peminjaman. User akan diminta untuk mengisi beberapa keterangan peminjaman. Untuk nim diharuskan menginput 10 angka, jika kurang atau lebih maka akan dimintai kembali.
+
+#
+<img width="592" height="390" alt="image" src="https://github.com/user-attachments/assets/8449a06a-771b-436e-90e7-5b1a07f5678c" />
+
+Disini user memilih kembali menu nomor 1.
+
+#
+<img width="487" height="636" alt="image" src="https://github.com/user-attachments/assets/8ce6595a-52d5-407d-b907-a39925ada1be" />
+
+User memilih menu nomor 2 dan program akan memperlihatkan daftar peminjaman yang sudah di input sebelumnya.
+
+#
+<img width="627" height="676" alt="image" src="https://github.com/user-attachments/assets/1e3ca408-fd13-4b9a-a0fa-55cf7b42a007" />
+
+User memilih menu 3. yaitu untuk mengubah data peminjaman. program akan memperlihatkan semua data peminjaman dan akan meminta user untuk meilih nomor data yang akan diubah. Selanjutnya user akan diminta untuk mengisi kembali keterangan yang baru.
+
+#
+<img width="541" height="482" alt="image" src="https://github.com/user-attachments/assets/944776d4-132c-4971-87cb-12a8439f9517" />
+
+Diatas merupakan daftar peminjaman barang yang sudah diubah sebelumnya.
+
+#
+<img width="395" height="597" alt="image" src="https://github.com/user-attachments/assets/99ba0d4e-9a7d-4f54-be0a-f1e64b3fd21d" />
+
+User memilih menu nomor 4, yangb dimana kan menghapus data peminjaman. Saat user salah menginput huruf, maka akan diminta kembali mengisi dengan angka.
+
+#
+<img width="648" height="302" alt="image" src="https://github.com/user-attachments/assets/1da1de87-e08a-4ec6-ad83-e74c4def849f" />
+
+Diatas merupakan hasil dari menghapus data.
+
+#
+<img width="818" height="413" alt="image" src="https://github.com/user-attachments/assets/3428e3b2-6495-4487-aafc-50348ebe9322" />
+
+Yang terakhir yaitu menu nomor 5, program selesai dan akan keluar dari program.
