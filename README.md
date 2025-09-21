@@ -185,3 +185,71 @@ Dua method ini adalah **getter dan setter**:
 
 Method **`tampilkanInfo()`** dioverride untuk menambahkan informasi **kategori barang elektronik** setelah menampilkan data umum dari superclass `Peminjaman`.
 
+
+### PeminjamanService.Java
+
+<img width="366" height="133" alt="image" src="https://github.com/user-attachments/assets/0ecb16cc-1e36-4d3d-9c40-b6bc29a44436" />
+
+- Package: kelas ini berada di package service.
+- Import:
+  - model.* → mengimpor semua kelas dari package model (seperti Peminjaman, PeminjamanElektronik, PeminjamanNonElektronik).
+  - java.util.ArrayList → digunakan untuk menyimpan daftar data peminjaman.
+  - java.util.Scanner → digunakan untuk input data dari pengguna.
+
+ #
+ <img width="658" height="95" alt="image" src="https://github.com/user-attachments/assets/60dd575a-8e80-4169-bb08-b3f86d69fb5e" />
+
+Kelas PeminjamanService berfungsi untuk mengelola data peminjaman.
+- ArrayList<Peminjaman> daftar → menyimpan kumpulan objek peminjaman (baik elektronik maupun non-elektronik).
+- Scanner sc → digunakan untuk menerima input dari pengguna.
+
+#
+<img width="890" height="240" alt="image" src="https://github.com/user-attachments/assets/5773a51f-a24f-49df-a1a6-81f2ee9481e2" />
+
+Method `inputString` berfungsi meminta input teks dari pengguna, memastikan tidak kosong, dan mengembalikan hasil yang sudah valid.
+
+#
+<img width="1112" height="238" alt="image" src="https://github.com/user-attachments/assets/53c45ece-170b-49a9-b1b5-3d3c95b92736" />
+
+Method `inputNIM` digunakan untuk meminta input NIM dari pengguna, dengan validasi bahwa NIM harus berupa **10 digit angka**, jika tidak sesuai maka akan diminta ulang hingga benar.
+
+#
+<img width="926" height="366" alt="image" src="https://github.com/user-attachments/assets/11879948-0b7a-4bae-aaa1-f21d7b05b7c8" />
+
+Method `inputJumlah` digunakan untuk meminta input jumlah barang dari pengguna, dengan validasi bahwa input harus berupa angka dan minimal **1**, jika kosong akan mengembalikan **-1**.
+
+#
+<img width="1185" height="538" alt="image" src="https://github.com/user-attachments/assets/d29098ec-4ec3-43f4-9572-d10c9b7f11d8" />
+
+Method `tambah` berfungsi untuk menambahkan data peminjaman baru dengan meminta input pengguna. Data umum seperti **nama, NIM, departemen, barang, dan jumlah** dicatat, lalu pengguna memilih jenis barang. Jika **elektronik**, ditambahkan atribut kondisi barang, sedangkan jika **non-elektronik**, ditambahkan kategori barang. Data kemudian disimpan ke dalam daftar dan ditampilkan pesan bahwa data berhasil ditambah.
+
+#
+<img width="992" height="696" alt="image" src="https://github.com/user-attachments/assets/4f8a4782-ac11-45f0-ba80-682ec4f49e95" />
+
+Method `lihat` digunakan untuk menampilkan seluruh data peminjaman. Jika belum ada data, akan muncul pesan **“Belum ada data”**. Data kemudian dipisahkan ke dalam dua daftar: **barang elektronik** dan **non-elektronik**, ditampilkan secara berurutan dengan nomor dan detail informasi tiap peminjaman.
+
+#
+<img width="833" height="547" alt="image" src="https://github.com/user-attachments/assets/32ef1282-b229-42e8-b858-065558724c91" />
+
+Method `ubah` digunakan untuk mengedit data peminjaman. Jika daftar kosong, muncul pesan **“Belum ada data”**. Semua data ditampilkan dengan nomor urut, lalu pengguna memilih nomor data yang ingin diubah. Jika nomor yang dipilih tidak valid, sistem akan menolak dan memberi pesan kesalahan.
+
+#
+<img width="1115" height="701" alt="image" src="https://github.com/user-attachments/assets/d7ed659a-52e6-4990-9cd0-cb5609d2be89" />
+
+Potongan lanjutan method `ubah` ini berfungsi untuk mengganti data lama dengan data baru.
+
+* Data lama diambil dari daftar berdasarkan indeks pilihan.
+* Pengguna mengisi ulang data baru (nama, NIM, departemen, barang, jumlah).
+* Jika barang elektronik, diminta **kondisi barang**; jika non-elektronik, diminta **kategori barang**.
+* Objek baru dibuat sesuai pilihan lalu **mengganti data lama** di posisi yang sama pada daftar.
+* Terakhir, muncul pesan **“Data berhasil diubah!”**.
+
+#
+<img width="786" height="625" alt="image" src="https://github.com/user-attachments/assets/3ee62f79-5b5d-43df-8167-54fbcda78c0f" />
+
+Method `hapus` digunakan untuk menghapus data peminjaman.
+
+* Jika daftar masih kosong, tampil pesan **“Belum ada data.”**.
+* Semua data ditampilkan dengan nomor urut.
+* Pengguna memilih nomor data yang ingin dihapus. Jika nomor tidak valid, muncul pesan error.
+* Jika valid, data akan dihapus dari daftar, lalu ditampilkan pesan **“Data berhasil dihapus!”**.
